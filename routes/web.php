@@ -8,7 +8,6 @@ use App\Http\Controllers\Admin\UsersController;
 use App\Http\Controllers\Admin\BannersController;
 use App\Http\Controllers\Admin\DoctorController;
 use App\Http\Controllers\Admin\PartnerController;
-use App\Http\Controllers\Admin\RequestsController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\DocController;
 
