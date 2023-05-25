@@ -110,8 +110,11 @@ Route::group(['prefix' => 'admin', 'middleware' => 'isAdmin'], function () {
     Route::get('service/del/{id}', [ServiceController::class, 'destroy'])->name('admin.service.destroy');
 
     //Emails
-    Route::get('emails', ['uses' => 'App\Http\Controllers\Admin\EmailController@index'])->name('admin.emails');
-    Route::get('emails/destroy/{id}', ['uses' => 'App\Http\Controllers\Admin\EmailController@destroy'])->name('admin.emails.destroy');
+    Route::get('emails',[EmailController::class,'index'])->name('admin.emails');
+    Route::get('emails/destroy/{id}',[EmailController::class,'destroy'])->name('admin.email.destroy');
+
+    //Route::get('emails', ['uses' => 'App\Http\Controllers\Admin\EmailController@index'])->name('admin.emails');
+    //Route::get('emails/destroy/{id}', ['uses' => 'App\Http\Controllers\Admin\EmailController@destroy'])->name('admin.emails.destroy');
 });
 
 Route::get("sitemap.xml", function () {
