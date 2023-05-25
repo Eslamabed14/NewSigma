@@ -3,9 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Doctor;
 use App\Models\User;
-use Illuminate\Http\Request;
 use Carbon\Carbon;
 
 class DoctorController extends Controller
