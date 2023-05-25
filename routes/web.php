@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Admin\UsersController;
 use App\Http\Controllers\Admin\BannersController;
 use App\Http\Controllers\Admin\DoctorController;
+use App\Http\Controllers\Admin\EmailController;
 use App\Http\Controllers\Admin\PartnerController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\DocController;
@@ -111,7 +112,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'isAdmin'], function () {
 
     //Emails
     Route::get('emails',[EmailController::class,'index'])->name('admin.emails');
-    Route::get('emails/destroy/{id}',[EmailController::class,'destroy'])->name('admin.email.destroy');
+    Route::get('emails/destroy/{id}',[EmailController::class,'destroy'])->name('admin.emails.destroy');
 
     //Route::get('emails', ['uses' => 'App\Http\Controllers\Admin\EmailController@index'])->name('admin.emails');
     //Route::get('emails/destroy/{id}', ['uses' => 'App\Http\Controllers\Admin\EmailController@destroy'])->name('admin.emails.destroy');
