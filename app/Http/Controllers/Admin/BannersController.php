@@ -105,7 +105,6 @@ class BannersController extends Controller
                 if(File::exists($oldpath)){
                     unlink($oldpath);
                 }
-
             }
           $data['image'] = $filename;
         }
