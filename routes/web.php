@@ -1,10 +1,10 @@
 <?php
 
-use App\Http\Controllers\Admin\ArticleController;
-use App\Http\Controllers\Admin\CityController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Admin\UsersController;
+use App\Http\Controllers\Admin\ArticleController;
+use App\Http\Controllers\Admin\CityController;
 use App\Http\Controllers\Admin\BannersController;
 use App\Http\Controllers\Admin\DoctorController;
 use App\Http\Controllers\Admin\EmailController;
