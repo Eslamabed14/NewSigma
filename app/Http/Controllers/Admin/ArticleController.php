@@ -107,7 +107,7 @@ class ArticleController extends Controller
                     unlink($oldpath);
                 }
             }
-          $data['image'] = $filename;
+        $data['image'] = $filename;
         }
         $article->update($data);
         return redirect()->back()->with('success', 'تم تعديل المقال بنجاح');
